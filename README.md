@@ -1,7 +1,5 @@
 # PiMonitor
 This is my Raspberry Pi project.
-# PiMonitor
-This is my Raspberry Pi project.
 
 My task was to create a system where a Raspberry Pi could provide the following metrics on an internal webpage. I'm a SysAdmin and not a developer so I'm sure there are more efficient ways to program this (I.E. not using bash scripts in cron to launch the python scripts but I got it working the way it is so I left it. My time budget ran out from the project but I may change it later).
 
