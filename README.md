@@ -31,7 +31,6 @@ Optional:
     
 Next is the required software:
 
-Required Software:
 1. Raspberry Pi OS 10 (Buster) Lite (No GUI required)
   A. https://www.raspberrypi.org/downloads/raspberry-pi-os/
 2. Apache2
@@ -45,7 +44,7 @@ Required Software:
 6. speedtest-cli
   A. sudo pip install speedtest-cli
   
-  Results:
+Results:
   
-  Here is the resulting web page
-  https://i.imgur.com/rvLknKA.png
+Here is the resulting web page
+https://i.imgur.com/rvLknKA.png
