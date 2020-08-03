@@ -12,17 +12,17 @@ GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_UP) #tells the system to read from
 #Bug: Cannot get the subject or the sender of the email to be displayed
 def send_alert(doorstate):
 
-        sender = 'laxpi@tollfreeforwarding.com'
-        receivers = ['bl@tollfreeforwarding.com']
+        message = """From: [INSERT SENDER EMAIL HERE]>
+        To: BL <[INSERT RECEIVER EMAIL HERE]>
 
-        message = """From: LAX Pi <laxpi@tollfreeforwarding.com>
-        To: BL <bl@tollfreeforwarding.com>
+        message = """From: LAX Pi <[INSERT SENDER EMAIL HERE]>
+        To: BL <[INSERT RECEIVER EMAIL HERE]>
         Subject: ALERT: The status of the REAR cabinet door in LAX has changed 
 
         This is a notification that the REAR cabinet door in LAX is """ +DoorRear
 
         try:
-                smtpObj = smtplib.SMTP('10.20.1.126')
+                smtpObj = smtplib.SMTP('[Insert Email Relay IP]')
                 smtpObj.sendmail(sender, receivers, message)
         except: 
                 print ("Ben was here")
