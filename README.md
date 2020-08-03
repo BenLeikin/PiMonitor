@@ -1,7 +1,7 @@
 # PiMonitor
-This is my Raspberry Pi project 
+This is my Raspberry Pi project.
 
-My task was to create a system where a Raspberry Pi could provide the following metrics on an internal webpage.
+My task was to create a system where a Raspberry Pi could provide the following metrics on an internal webpage. I'm a SysAdmin and not a developer so I'm sure there are more efficient ways to program this (I.E. not using bash scripts in cron to launch the python scripts but I got it working the way it is so I left it. My time budget ran out from the project but I may change it later).
 
 1. Intrusion detection
   A. Email alert on sensor change state
@@ -44,3 +44,8 @@ Required Software:
 5. vcgencmd (Is included with OS)
 6. speedtest-cli
   A. sudo pip install speedtest-cli
+  
+  Results:
+  
+  Here is the resulting web page
+  https://i.imgur.com/rvLknKA.png
