@@ -1,0 +1,60 @@
+#### Located in /var/www/html/ directory ###
+
+<head>
+  <meta http-equiv="refresh" content="5">
+</head>
+
+
+<h1 style="text-align: center;">LAX Server Cabinet Monitor</h2>
+<p style="text-align: center;"><h1 style="text-align: center; padding:">
+
+
+
+<div class="cleanslate w24tz-current-time w24tz-middle" style="text-align: center display: inline-block !important; visibility: hidden !important; min-width:300p$
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+
+<h2 style="text-align: center;">Front Cabinet Door:</h2>
+<p style="text-align: center;"><h2 style="text-align: center; padding:">
+<?php
+    $myfilename = "/home/pi/FrontDoorStatus.txt";
+    if(file_exists($myfilename)){
+      echo file_get_contents($myfilename);
+    }
+?>
+</h2></P>
+<h2 style="text-align: center;">Rear Cabinet Door:</h2>
+<p style="text-align: center;"><h2 style="text-align: center; padding:">
+<?php
+    $myfilename = "/home/pi/RearDoorStatus.txt";
+    if(file_exists($myfilename)){
+      echo file_get_contents($myfilename);
+    }
+?>
+</h2></p>
+<h2 style="text-align: center; padding:">Environmental Stats:</h3>
+<h2 style="text-align: center; padding:">
+<?php
+    $myfilename = "/home/pi/EnvMonitorStatus.txt";
+    if(file_exists($myfilename)){
+      echo file_get_contents($myfilename);
+    }
+?>
+</h2>
+<h3 style="text-align: center; padding:">Network Speed Test:</h3>
+<h3 style="text-align: center; padding:">
+<?php
+    $myfilename = "/home/pi/SpeedTest.txt";
+    if(file_exists($myfilename)){
+      echo file_get_contents($myfilename);
+    }
+?>
+</h3>
+<h3 style="text-align: center; padding:">RaspberryPi CPU Temp:</h3>
+<h3 style="text-align: center; padding:">
+<?php
+    $myfilename = "/home/pi/CpuTemp.txt";
+    if(file_exists($myfilename)){
+      echo file_get_contents($myfilename);
+    }
+?>
+</h3>
